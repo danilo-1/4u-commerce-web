@@ -5,12 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-<<<<<<< HEAD
-    "start": "node /"
-=======
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
->>>>>>> e05b84a4866b61befceb64d7ce0d8570e5c04e0c
   },
   "dependencies": {
     "core-js": "^3.6.5",
