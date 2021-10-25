@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <div>
     <h4 class="mt-2">Cadastro</h4>
     <div class="row">
@@ -19,8 +20,13 @@
 </template>
 
 <script>
+import Header from "../components/Header.vue";
+
 export default {
   name: "Register",
+  components: {
+    Header,
+  },
   data() {
     return {
       user: {
