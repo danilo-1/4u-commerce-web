@@ -1,6 +1,8 @@
 <template>
   <Header />
+  
   <div class="login">
+    <div class="card">
     <form action="" method="post">
       <div>
         <input type="text" id="email" placeholder="E-mail" />
@@ -12,6 +14,7 @@
         <button type="submit">Entrar</button>
       </div>
     </form>
+    </div>
   </div>
 </template>
 
@@ -34,7 +37,9 @@ form {
   border: 1px solid#CCC;
   border-radius: 1em;
 }
-
+.login {
+  background: #CCC ;
+}
 form div + div {
   margin-top: 1em;
 }
