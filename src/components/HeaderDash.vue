@@ -1,7 +1,7 @@
 <template>
-  <div class="header">
+      <div class="header">
     <router-link to="/">
-      <a href="#default" class="logo">CompanyLogo</a>
+      <a href="#default" class="logo">Bem vindo à Dash</a>
     </router-link>
     <div class="header-right">
       <router-link to="/">
@@ -16,17 +16,18 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
-  name: "HeaderSite",
-};
+    name:'HeaderDash',
+    setup() {
+        
+    },
+}
 </script>
-
 <style scoped>
 .header {
   overflow: hidden;
-  background-color: #2e66ff;
+  background-color: #14203b;
   padding: 0px 10px;
 }
 

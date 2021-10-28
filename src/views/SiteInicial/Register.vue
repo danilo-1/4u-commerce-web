@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  
   <div>
     <h4 class="mt-2">Cadastro</h4>
     <div class="row">
@@ -33,14 +33,12 @@
 
 <script>
 import { toRefs, ref, reactive } from 'vue';
-import Header from "../components/Header.vue";
-import UserService from "../services/UserService"
+
+import UserService from "../../services/UserService"
 export default {
   name: "Register",
-  components: {
-    UserService,
-    Header,
-  },
+
+
   setup(){
     const verific = ref(false)
     const error = ref(false)

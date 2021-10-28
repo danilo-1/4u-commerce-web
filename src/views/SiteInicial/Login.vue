@@ -1,8 +1,8 @@
 <template>
-  <Header />
+ 
   
-  <div class="login">
-    <div class="card">
+  <div class="">
+    <div class="card p-4">
     <form action="" method="post">
       <div>
         <input type="text" id="email" placeholder="E-mail" />
@@ -19,13 +19,11 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
+
 
 export default {
   name: "Login",
-  components: {
-    Header,
-  }
+
 };
 </script>
 
@@ -37,9 +35,7 @@ form {
   border: 1px solid#CCC;
   border-radius: 1em;
 }
-.login {
-  background: #CCC ;
-}
+
 form div + div {
   margin-top: 1em;
 }
