@@ -1,17 +1,19 @@
 <template>
-    
-        <HeaderLayout/>
-    
-    
- 
+    <div class="">
+    <div class=" col-12">
+    <HeaderLayout/>
+    </div>
+    <div class=" col-12 " style="min-height:83vh">
         <slot />
-
+    </div>
+    </div>
 </template>
 <script>
 import { ref } from '@vue/reactivity'
 import { provide } from '@vue/runtime-core'
 
 import HeaderLayout from './HeaderLayout.vue'
+
 
 
 export default {

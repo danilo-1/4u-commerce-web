@@ -6,13 +6,13 @@
 
 <script>
 import { shallowRef } from "@vue/reactivity";
-import AppLayoutDefault from "./AppLayoutDefault.vue";
+
 import { useRoute } from "vue-router";
 import { watch } from "@vue/runtime-core";
 export default {
   name: "AppLayout",
   setup() {
-    const layout = shallowRef(AppLayoutDefault);
+    const layout = shallowRef('');
     const route = useRoute();
 
     watch(
@@ -20,9 +20,9 @@ export default {
       (meta) => {
         try {
           const component = require(`@/layouts/${meta.layout}.vue`);
-          layout.value = component?.default || AppLayoutDefault;
+          layout.value = component?.default ;
         } catch (e) {
-          layout.value = AppLayoutDefault;
+          console.log(e)
         }
       }
     );

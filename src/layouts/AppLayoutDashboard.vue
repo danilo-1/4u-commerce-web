@@ -1,4 +1,5 @@
 <template>
+<header-layout/>
     <div>
         <slot />
     </div>
@@ -6,9 +7,11 @@
 <script>
 import { ref } from '@vue/reactivity'
 import { provide } from '@vue/runtime-core'
+import HeaderLayout from './HeaderLayout.vue'
 
 
 export default {
+  components: { HeaderLayout },
     name:'AppSite',
     setup() {
         const mode = ref("dash")

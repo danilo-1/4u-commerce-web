@@ -1,17 +1,20 @@
 <template>
     <div>
-        <Headersite v-if="mode == 'site'"/> 
+        <HeaderSite v-if="mode == 'site'"/> 
+        
         <HeaderDash v-if="mode == 'dash'"/> 
    </div>
 </template>
 <script>
 import { inject } from '@vue/runtime-core'
-import Headersite from '../components/Header.vue'
+import HeaderSite from '../components/HeaderSite.vue'
 import HeaderDash from '../components/HeaderDash.vue'
 
 
+
 export default {
-  components: { Headersite, HeaderDash },
+  components: { HeaderSite, HeaderDash },
+    
     name:'HeaderLayout',
     setup() {
         const mode = inject('mode', null)

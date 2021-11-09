@@ -28,7 +28,16 @@ const routes = [
     meta:{
       layout: 'AppLayoutSite'
     },
-  }
+  },
+
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Dashboard/Dashboard.vue'),
+    meta:{
+      layout: 'AppLayoutDashboard'
+    },
+  },
 ]
 
 const router = createRouter({
