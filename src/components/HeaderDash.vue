@@ -3,7 +3,7 @@
       <div class="bg-dark d-flex justify-content-between">
         
     <router-link to="/dashboard" class="col-6 text-start">
-      <a  class=" text-start"><img src="@/assets/logo_4uWhite.svg" style="width:100px"></a>
+      <a  class=" text-start"></a>
     </router-link>
     <div class=" col-6 text-end">
       <div class="btn-group  mt-3 me-3 ">
