@@ -11,4 +11,4 @@ window.jQuery = window.$ = require('jquery')
 createApp(App)
     .use(router)
     .mount('#app')
-    
+

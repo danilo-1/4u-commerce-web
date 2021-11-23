@@ -7,7 +7,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('@/views/SiteInicial/Home.vue'),
-    meta:{
+    meta: {
       layout: 'AppLayoutSite'
     },
   },
@@ -16,7 +16,7 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "about" */ '../views/SiteInicial/Login.vue'),
-    meta:{
+    meta: {
       layout: 'AppLayoutSite'
     },
   },
@@ -25,7 +25,7 @@ const routes = [
     path: '/cadastro',
     name: 'Register',
     component: () => import(/* webpackChunkName: "about" */ '../views/SiteInicial/Register.vue'),
-    meta:{
+    meta: {
       layout: 'AppLayoutSite'
     },
   },
@@ -34,7 +34,7 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: () => import(/* webpackChunkName: "about" */ '../views/Dashboard/Dashboard.vue'),
-    meta:{
+    meta: {
       layout: 'AppLayoutDashboard'
     },
   },
