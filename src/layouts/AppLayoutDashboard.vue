@@ -145,5 +145,5 @@ export default {
 }
 </script>
 <style>
-@import 'StyleAside.css';
+@import './StyleAside.css';
 </style>
