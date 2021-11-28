@@ -38,6 +38,42 @@ const routes = [
       layout: 'AppLayoutDashboard'
     },
   },
+
+  {
+    path: '/administracao',
+    name: 'Administração',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Administracao/Admin.vue'),
+    meta: {
+      layout: 'AppLayoutDashboard'
+    },
+  },
+
+  {
+    path: '/administracao/usuarios',
+    name: 'Administração de Usuários',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Administracao/Users/Users.vue'),
+    meta: {
+      layout: 'AppLayoutDashboard'
+    },
+  },
+
+  {
+    path: '/administracao/usuarios/editar/:id',
+    name: 'Editar Usuário',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Administracao/Users/EditUser.vue'),
+    meta: {
+      layout: 'AppLayoutDashboard'
+    },
+  },
+
+  {
+    path: '/administracao/permissoes',
+    name: 'Administração de Permissões',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Administracao/Roles/Roles.vue'),
+    meta: {
+      layout: 'AppLayoutDashboard'
+    },
+  },
 ]
 
 const router = createRouter({

@@ -1,16 +1,43 @@
 <template>
   <div>
     <h4 class="mt-2">Cadastro</h4>
-    <div class="row">
+    <div class="col-12">
       <form @submit.prevent="register()">
-        <div class="col-12 mb-2">
-          <input type="text" v-model="user.name" placeholder="Nome" />
+        <div class="row">
+          <div class="col-6 mb-2">
+            <input type="text" v-model="user.name" placeholder="Nome" />
+          </div>
+          <div class="col-6 mb-2">
+            <input type="email" v-model="user.email" placeholder="Email" />
+          </div>
         </div>
-        <div class="col-12 mb-2">
-          <input type="email" v-model="user.email" placeholder="Email" />
+        <div class="row">
+          <div class="col-6 mb-2">
+            <input type="text" v-model="user.cpf" placeholder="Cpf" />
+          </div>
+          <div class="col-6 mb-2">
+            <input
+              type="text"
+              v-model="user.telephone"
+              placeholder="Telefone"
+            />
+          </div>
         </div>
-        <div class="col-12 mb-2">
-          <input type="password" v-model="user.password" placeholder="Senha" />
+        <div class="row">
+          <div class="col-6 mb-2">
+            <input
+              type="password"
+              v-model="user.password"
+              placeholder="Senha"
+            />
+          </div>
+          <div class="col-6 mb-2">
+            <input
+              type="password"
+              v-model="confirmPassword"
+              placeholder="Confirmar senha"
+            />
+          </div>
         </div>
         <div class="col-12">
           <button type="submit">Cadastrar</button>
@@ -43,8 +70,12 @@ export default {
       user: {
         name: "",
         email: "",
+        cpf: "",
+        telephone: "",
         password: "",
       },
+
+      confirmPassword: "",
     });
     const methods = reactive({
       register() {
